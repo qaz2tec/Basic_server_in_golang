@@ -30,7 +30,7 @@ func handleform(w http.ResponseWriter, r *http.Request) {
 }
 
 func handlehello(w http.ResponseWriter, r *http.Request) {
-	if r.URL.Path != "hello" {
+	if r.URL.Path != "/hello" {
 		http.Error(w, "404 not found", http.StatusNotFound)
 		return
 	}
